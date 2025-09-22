@@ -1,1 +1,7 @@
 # goit-markup-hw-04
+
+My homeworks in GoIT HTML+CSS 2.1 course
+2025-09-14 HW1 - Module 1 "HTML Basics"
+2025-09-17 HW2 - Module 2 "Introduction to CSS"
+2025-09-22 HW3 - Module 3 "Flexbox"
+2025-09-?? HW4 - Module 4 "Decoration"
