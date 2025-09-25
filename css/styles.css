@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }*/
 
+/* #region GLOBAL */
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
@@ -15,19 +16,28 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
+ul,
+ol {
+    margin: 0;
     padding-left: 0;
     list-style-type: none;
 }
 
 a {
+    color: currentColor;
     text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
 }
 
 img {
@@ -35,14 +45,14 @@ img {
     max-width: 100%;
     object-fit: cover;
 }
+/* #endregion */
 
+
+/* #region COMMON */
 .container {
     max-width: 1158px;
     padding: 0 15px;
-    /*padding-left: 15px;
-    padding-right: 15px;*/
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .section {
@@ -76,13 +86,12 @@ img {
     letter-spacing: inherit;
     color: inherit;
 }
+/* #endregion */
+
 
 /* #region HEADER Nav Menu & Address */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    /*padding-top: 24px;
-    padding-bottom: 23px;       
-    height: 72px;*/
 }
 
 .page-header .container,
@@ -91,7 +100,6 @@ img {
 .address-menu {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
     align-items: center;
 }
 
@@ -111,6 +119,8 @@ img {
 .page-nav-list .link {
     display: block;
     padding: 24px 0;
+    font-weight: 500;
+    color: #2e2f42;
 }
 
 .address-menu,
@@ -125,11 +135,6 @@ img {
     align-items: center;
 }
 
-.page-nav-list .link {
-    font-weight: 500;
-    color: #2e2f42;
-}
-
 .page-nav-list .link:hover,
 .page-nav-list .link:focus {
     color: #404bbf;
@@ -138,11 +143,6 @@ img {
 .page-nav-list .link:active {
     color: #404bbf;
     text-decoration: underline;
-}
-
-.contacts-list .link {
-    font-style: normal;
-    color: currentColor;
 }
 
 .contacts-list .link:hover,
@@ -222,8 +222,8 @@ img {
 
 .section.hero .order-btn {
     display: block;
-    cursor: pointer;
-    font-family: inherit;
+    /*cursor: pointer;
+    font-family: inherit;*/
     color: #fff;
     font-weight: 500;
     font-size: 16px;
