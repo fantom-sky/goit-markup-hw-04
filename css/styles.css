@@ -93,13 +93,16 @@ img {
 /* #region HEADER Nav Menu & Address */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    z-index: 900;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+    /*z-index: 900;*/
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    z-index: 990;
+    /*z-index: 990;*/
 }
 
 .header-nav,
@@ -134,7 +137,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 4px;
     background-color: transparent;
@@ -210,8 +213,9 @@ img {
 /* #region Section 1st - HERO */
 .section.hero {
     display: flex;
-    /*min-height: 100%;*/
-    max-width: 100%;
+    min-height: 100%;
+    /*max-width: 100%;*/
+    max-width: 1440px;
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(
@@ -221,7 +225,7 @@ img {
         ),
         url(../images/people-office-1-progress.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-color: #2e2f42;
     padding: 188px 0;
@@ -352,7 +356,7 @@ img {
 
 .team-card-info {
     text-align: center;
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .team-card-text {
@@ -360,16 +364,23 @@ img {
 }
 .list-team-social-links {
     display: flex;
+    justify-content: center;
     gap: 24px;
     margin: 0 auto;    
 }
+
+.item-team-social-links {
+    width: 40px;
+    height: 40px;
+}
+
 .team-soc-link {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -426,6 +437,9 @@ img {
 
 .portfolio-item .overlay {
     position: absolute;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    margin: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -444,11 +458,6 @@ img {
     transform: translatey(0);
 }
 
-.portfolio-item .overlay p {
-    color: #f4f4fd;;
-    padding: 40px 32px;
-    margin: 0;
-}
 /* #endregion */
 
 
@@ -461,7 +470,7 @@ img {
 
 .container.footer {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .box-footer-logo {
@@ -490,13 +499,18 @@ img {
     margin: 0 auto;
 }
 
+.item-footer-soc-link {
+    width: 40px;
+    height: 40px;
+}
+
 .footer-soc-link {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
